@@ -43,7 +43,7 @@ The Ostris AI Toolkit is a versatile framework designed for building advanced AI
 
 ### 1. Environment Setup (RunPod or Local with GPU)
 
-Clone the repository and set up the Python environment:
+- Clone the repository and set up the Python environment:
 
 ```bash
 git clone https://github.com/ostris/ai-toolkit.git
@@ -52,15 +52,15 @@ git submodule update --init --recursive
 python3 -m venv venv
 source venv/bin/activate
 ```
--Install PyTorch (tested version with CUDA 12.6):
+- Install PyTorch (tested version with CUDA 12.6):
 ```bash
 pip install --no-cache-dir torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
 ```
--Install the remaining dependencies:
+- Install the remaining dependencies:
 ```bash
 pip install -r requirements.txt
 ```
--If you run into compatibility issues, run the following optional upgrade:
+- If you run into compatibility issues, run the following optional upgrade:
 ```bash
 pip install --upgrade accelerate transformers diffusers huggingface_hub
 ```
