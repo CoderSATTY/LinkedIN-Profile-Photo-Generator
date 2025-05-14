@@ -4,9 +4,40 @@ This project focuses on converting casual user images into professional-looking 
 
 ---
 ## About Ostris AI Toolkit and why we used it?
-The Ostris AI Toolkit is a versatile framework designed for building advanced AI applications with ease. It provides ready-to-use templates and pipelines for tasks such as face-swapping, text-to-image generation, and LoRA-based fine-tuning. In this project, OstrisAI was used in conjunction with Stable Diffusion to transform basic user photos into high-quality, professional-looking LinkedIn profile images. The toolkit supports integration with models like BLIP-2, CLIP, and Florence-2, allowing for the generation of detailed image captions that guide the AI to enhance relevant attributes such as attire, background, and lighting. Crucially, it also supports the application of custom LoRA weights, enabling personalized fine-tuning that preserves the subject’s identity while improving overall presentation. To sum it up, Ostris AI-Toolkit is a personalization-first, lightweight, and Cloud GPU -friendly setup to build exactly what we needed without having to start from scratch, and thats why we used it for our project.
+The Ostris AI Toolkit is a versatile framework designed for building advanced AI applications with ease. It provides ready-to-use templates and pipelines for tasks such as face-swapping, text-to-image generation, and LoRA-based fine-tuning. In this project, OstrisAI was used in conjunction with Stable Diffusion to transform basic user photos into high-quality, professional-looking LinkedIn profile images. The toolkit supports integration with Florence-2 model, allowing for the generation of detailed image captions that guide the AI to enhance relevant attributes such as attire, background, and lighting. Crucially, it also supports the application of custom LoRA weights, enabling personalized fine-tuning that preserves the subject’s identity while improving overall presentation. To sum it up, Ostris AI-Toolkit is a personalization-first, lightweight, and Cloud GPU -friendly setup to build exactly what we needed without having to start from scratch, and thats why we used it for our project.
 
 ---
 ## 📁 Project Structure
-1. 
+
+1. Collect Input Images
+- Folder : images/
+- Place user-uploaded or sample photos here.
+- Recommended format : .jpg or .png.
+
+2. Generate Captions with ComfyUI
+- Tool : ComfyUI
+- Files :
+  - scripts/caption_images.py
+  - comfyui_workflow.json
+- Purpose : Generate rich, descriptive captions using models like BLIP-2, CLIP, or Florence-2. (Florence - 2 was working better for us)
+- Output : Captions stored as .txt files or JSON in the captions/ folder.
+
+3. Prepare Prompts using Captions
+- Script : inside caption_images.py or separate script like prepare_prompts.py
+- Combine caption data into prompts for guiding the image generation process.
+- Optionally include instructions like "professional lighting", "business attire", or "clean background".
+
+4. Run Flux LoRA Model with Stable Diffusion
+- Tool : Ostris AI Toolkit
+- Script : scripts/generate_photos.py
+- Steps :
+  - Load a base Stable Diffusion model (e.g., SD 1.5 or SDXL).
+  - Apply Flux LoRA weights (fine-tuned for LinkedIn-style outputs).
+  - Generate images using the prepared prompts and input photos as conditioning.
+- Output Folder : outputs/
+
+5. Output images at different steps
+- Save polished images back to outputs/.
+
+
 
