@@ -9,34 +9,34 @@ The Ostris AI Toolkit is a versatile framework designed for building advanced AI
 ---
 ## 📁 Project Structure
 
-1. Collect Input Images
-- Folder : images/
+### 1. Collect Input Images
+- <ins>Folder</ins> : images/
 - Place user-uploaded or sample photos here.
-- Recommended format : .jpg or .png.
+- <ins>Recommended format</ins> : .jpg or .png.
 
-2. Generate Captions with ComfyUI
-- Tool : ComfyUI
-- Files :
+### 2. Generate Captions with ComfyUI
+- <ins>Tool</ins> : ComfyUI
+- <ins>Files</ins> :
   - scripts/caption_images.py
   - comfyui_workflow.json
-- Purpose : Generate rich, descriptive captions using models like BLIP-2, CLIP, or Florence-2. (Florence - 2 was working better for us)
-- Output : Captions stored as .txt files or JSON in the captions/ folder.
+- <ins>Purpose</ins> : Generate rich, descriptive captions using models like BLIP-2, CLIP, or Florence-2. (Florence - 2 was working better for us)
+- <ins>Output</ins> : Captions stored as .txt files or JSON in the captions/ folder.
 
-3. Prepare Prompts using Captions
-- Script : inside caption_images.py or separate script like prepare_prompts.py
+### 3. Prepare Prompts using Captions
+- <ins>Script</ins> : inside caption_images.py or separate script like prepare_prompts.py
 - Combine caption data into prompts for guiding the image generation process.
 - Optionally include instructions like "professional lighting", "business attire", or "clean background".
 
-4. Run Flux LoRA Model with Stable Diffusion
-- Tool : Ostris AI Toolkit
-- Script : scripts/generate_photos.py
-- Steps :
+### 4. Run Flux LoRA Model with Stable Diffusion
+- <ins>Tool</ins> : Ostris AI Toolkit
+- <ins>Script</ins> : scripts/generate_photos.py
+- <ins>Steps</ins> :
   - Load a base Stable Diffusion model (e.g., SD 1.5 or SDXL).
   - Apply Flux LoRA weights (fine-tuned for LinkedIn-style outputs).
   - Generate images using the prepared prompts and input photos as conditioning.
-- Output Folder : outputs/
+- <ins>Output Folder</ins> : outputs/
 
-5. Output images at different steps
+### 5. Output images at different steps
 - Save polished images back to outputs/.
 
 
