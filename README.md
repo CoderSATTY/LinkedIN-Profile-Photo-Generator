@@ -3,6 +3,10 @@
 This project focuses on converting casual user images into professional-looking profile pictures suitable for LinkedIn. Using the **OstrisAI Toolkit**, we enhanced visual quality while preserving the individual’s identity. A key part of our workflow involved captioning images using **Florence-2** to extract meaningful descriptions. These captions were used to guide **Stable Diffusion** —a powerful image generation model—to enhance pose, background, lighting, and attire. Additionally, we applied **LoRA fine-tuning** to personalize outputs and maintain identity consistency. The project demonstrated the integration of vision-language models and generative AI for creating polished, career-ready profile images.
 
 ---
+## About Ostris AI Toolkit and why we used it?
+The Ostris AI Toolkit is a versatile framework designed for building advanced AI applications with ease. It provides ready-to-use templates and pipelines for tasks such as face-swapping, text-to-image generation, and LoRA-based fine-tuning. In this project, OstrisAI was used in conjunction with Stable Diffusion to transform basic user photos into high-quality, professional-looking LinkedIn profile images. The toolkit supports integration with models like BLIP-2, CLIP, and Florence-2, allowing for the generation of detailed image captions that guide the AI to enhance relevant attributes such as attire, background, and lighting. Crucially, it also supports the application of custom LoRA weights, enabling personalized fine-tuning that preserves the subject’s identity while improving overall presentation. To sum it up, Ostris AI-Toolkit is a personalization-first, lightweight, and Cloud GPU -friendly setup to build exactly what we needed without having to start from scratch, and thats why we used it for our project.
 
+---
 ## 📁 Project Structure
+1. 
 
