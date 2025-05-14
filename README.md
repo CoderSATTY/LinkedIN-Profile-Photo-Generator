@@ -55,7 +55,7 @@ source venv/bin/activate
 ```bash
 pip install --no-cache-dir torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
 -Install the remaining dependencies:
-```bash
+```
 pip install -r requirements.txt
 -If you run into compatibility issues, run the following optional upgrade:
 ```bash
