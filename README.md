@@ -30,7 +30,7 @@ The Ostris AI Toolkit is a versatile framework designed for building advanced AI
 
 ### 4. Run Flux LoRA Model with Stable Diffusion
 - <ins>Tool</ins> : [Ostris AI Toolkit](https://github.com/ostris/ai-toolkit)
-- <ins>Script</ins> : Scripts/generate_photos.py
+- <ins>Script</ins> : Scripts/LinkedIN_Train_Lora.yaml
 - <ins>Steps</ins> :
   - Load a base Stable Diffusion model (e.g., SD 1.5 or SDXL).
   - Apply Flux LoRA weights (fine-tuned for LinkedIn-style outputs).
