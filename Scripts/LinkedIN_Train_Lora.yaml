@@ -2,7 +2,7 @@
 job: extension
 config:
   # this name will be the folder and filename name
-  name: "Satyam"
+  name: "Your Name"
   process:
     - type: 'sd_trainer'
       # root folder to save training sessions/samples/weights
@@ -12,7 +12,7 @@ config:
       device: cuda:0
       # if a trigger word is specified, it will be added to captions of training data if it does not already exist
       # alternatively, in your captions you can add [trigger] and it will be replaced with the trigger word
-      trigger_word: "Satyam"
+      trigger_word: "Trigger" #Trigger can a person name or a pet name, anything
       network:
         type: "lora"
         linear: 16
@@ -31,7 +31,7 @@ config:
         # images will automatically be resized and bucketed into the resolution specified
         # on windows, escape back slashes with another backslash so
         # "C:\\path\\to\\images\\folder"
-        - folder_path: "/content/omfoo"
+        - folder_path: "/content/input_images_with_captions"
           caption_ext: "txt"
           caption_dropout_rate: 0.05  # will drop out the caption 5% of time
           shuffle_tokens: false  # shuffle caption order, split by commas
@@ -63,7 +63,7 @@ config:
         dtype: bf16
       model:
         # huggingface model name or path
-        name_or_path: "black-forest-labs/FLUX.1-dev"
+        name_or_path: "black-forest-labs/FLUX.1-dev" 
         is_flux: true
         quantize: true  # run 8bit mixed precision
 #        low_vram: true  # uncomment this if the GPU is connected to your monitors. It will use less vram to quantize, but is slower.
@@ -72,18 +72,18 @@ config:
         sample_every: 250 # sample every this many steps
         width: 1024
         height: 1024
-        prompts:
+        prompts: # upload your prompts here, as we have given in our repo /outputs/Prompts
           # you can add [trigger] to the prompts here and it will be replaced with the trigger word
-#          - "[trigger] holding a sign that says 'I LOVE PROMPTS!'"\
+#         - "[trigger] holding a sign that says 'I LOVE PROMPTS!"
           - "[trigger] a man wearing suit and tie, in a room"
           - "[trigger] a man wearing a blue suit, in an office"
           - "[trigger] a man wearing a pink suit and a tie, standing near McDonald's"
         neg: ""  # not used on flux
-        seed: 444
+        seed: 444      #more it is, the better it is
         walk_seed: true
         guidance_scale: 4
         sample_steps: 20
 # you can add any additional meta info here. [name] is replaced with config name at top
 meta:
-  name: "vansh"
+  name: "name"
   version: '1.0'
