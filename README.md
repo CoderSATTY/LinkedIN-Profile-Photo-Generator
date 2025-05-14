@@ -87,19 +87,19 @@ huggingface-cli login
 # Paste your access token when prompted
 ```
 ### 4. Training the Model
-1.Copy an example config file from config/examples to config/ and rename it:
+1. Copy an example config file from config/examples to config/ and rename it:
 ```bash
 cp config/examples/train_lora_flux_schnell_24gb.yaml config/your_config.yaml
 ```
-2.Edit the configuration file:
-Set your dataset path:
+2. Edit the configuration file:
+- Set your dataset path:
+  ```bash
+  folder_path: "/workspace/ai-toolkit/your-dataset"
+  ```
+- Review and update other parameters based on your training goals.
+3. Start Training and check the output at each steps:
 ```bash
-folder_path: "/workspace/ai-toolkit/your-dataset"
-```
-Review and update other parameters based on your training goals.
-3.Start Training:
-```bash
-python run.py config/your_config.yaml
+python run Scripts/LinkedIN_Train_Lora.yaml
 ```
 ### 💡 Note:
 A new folder will be created based on your config’s output path.
