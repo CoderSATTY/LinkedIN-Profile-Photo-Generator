@@ -10,14 +10,14 @@ The Ostris AI Toolkit is a versatile framework designed for building advanced AI
 ## 📁 Project Structure
 
 ### 1. Collect Input Images
-- <ins>Folder</ins> : images/
+- <ins>Folder</ins> : input images/your_image_dataset
 - Place user-uploaded or sample photos here.
 - <ins>Recommended format</ins> : .jpg or .png.
 
 ### 2. Generate Captions with ComfyUI
 - <ins>Tool</ins> : ComfyUI
 - <ins>Files</ins> :
-  - scripts/caption_images.py
+  - [Refer this link for captioning images](https://github.com/TheLocalLab/fluxgym-Colab?tab=readme-ov-file)
   - comfyui_workflow.json
 - <ins>Purpose</ins> : Generate rich, descriptive captions using models like BLIP-2, CLIP, or Florence-2. (Florence - 2 was working better for us)
 - <ins>Output</ins> : Captions stored as .txt files or JSON in the captions/ folder.
