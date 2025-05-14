@@ -102,6 +102,6 @@ cp config/examples/train_lora_flux_schnell_24gb.yaml config/your_config.yaml
 python run Scripts/LinkedIN_Train_Lora.yaml
 ```
 ### 💡 Note:
-A new folder will be created based on your config’s output path.
-It will contain all checkpoints and sample outputs.
-You can safely interrupt training with Ctrl+C. Resume training anytime and it will continue from the last saved checkpoint.
+-A new folder will be created based on your config’s output path.
+-It will contain all checkpoints and sample outputs.
+-You can safely interrupt training with Ctrl+C. Resume training anytime and it will continue from the last saved checkpoint.
