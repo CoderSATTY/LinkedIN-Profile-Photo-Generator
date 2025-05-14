@@ -1,0 +1,7 @@
+Prompt-1 : "Satyam a man in a sleek navy-blue suit, standing confidently in a bustling city street."
+Prompt-2 : "Satyam dressed in a sharp black suit, posing elegantly in front of a modern glass skyscraper."
+Prompt-3 : "Satyam in a crisp white suit, standing near a luxurious car on a rainy evening."
+Prompt-4 :"Satyam in a bold green suit, standing in a futuristic neon-lit alleyway at night.",
+Prompt-5 : "A stylish Satyam, wearing a classic grey suit, standing by a riverside at sunset."
+Prompt-6 : "A well-dressed Satyam in a vibrant red suit, standing in a serene park with autumn leaves around."
+        
