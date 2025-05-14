@@ -17,9 +17,9 @@ The Ostris AI Toolkit is a versatile framework designed for building advanced AI
 ### 2. Generate Captions with ComfyUI
 - <ins>Tool</ins> : ComfyUI
 - <ins>Files</ins> :
-  - [Refer this link for captioning images](https://github.com/TheLocalLab/fluxgym-Colab?tab=readme-ov-file)
+  - [Refer this link for captioning images](https://github.com/TheLocalLab/fluxgym-Colab?tab=readme-ov-file) (Florence-2 was working better for us)
   - Scripts/Simple Flux LoRA Captioning Workflow.json
-- <ins>Purpose</ins> : Generate rich, descriptive captions using models like BLIP-2, CLIP, or Florence-2. (Florence - 2 was working better for us)
+- <ins>Purpose</ins> : Generate rich, descriptive captions using models like BLIP-2, CLIP, or Florence-2. 
 - <ins>Output</ins> : Captions stored as .txt files or JSON in the captions/ folder.
 
 ### 3. Prepare Prompts using Captions
