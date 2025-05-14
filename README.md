@@ -23,23 +23,24 @@ The Ostris AI Toolkit is a versatile framework designed for building advanced AI
 - <ins>Output</ins> : Captions stored as .txt files or JSON in the captions/ folder.
 
 ### 3. Prepare Prompts using Captions
-- <ins>Script</ins> : inside caption_images.py or separate script like prepare_prompts.py
-- Combine caption data into prompts for guiding the image generation process.
-- Optionally include instructions like "professional lighting", "business attire", or "clean background".
+- <ins>Script</ins> : inside Outputs/Prompts
+- Includes prompts for both Person-1 and Person-2, which were decided beforehand.
+- Combined caption data into prompts for guiding the image generation process.
+
 
 ### 4. Run Flux LoRA Model with Stable Diffusion
-- <ins>Tool</ins> : Ostris AI Toolkit
-- <ins>Script</ins> : scripts/generate_photos.py
+- <ins>Tool</ins> : [Ostris AI Toolkit](https://github.com/ostris/ai-toolkit)
+- <ins>Script</ins> : Scripts/generate_photos.py
 - <ins>Steps</ins> :
   - Load a base Stable Diffusion model (e.g., SD 1.5 or SDXL).
   - Apply Flux LoRA weights (fine-tuned for LinkedIn-style outputs).
   - Generate images using the prepared prompts and input photos as conditioning.
-- <ins>Output Folder</ins> : outputs/
+  - Save polished images back to Outputs/.
+- <ins>Output Folder</ins> : Outputs/
 
-### 5. Output images at different steps
-- Save polished images back to outputs/.
 
 ## 📄 Setup Instructions
+
 ### 1. Environment Setup (RunPod or Local with GPU)
 
 Clone the repository and set up the Python environment:
