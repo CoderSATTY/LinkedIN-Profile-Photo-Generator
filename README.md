@@ -50,7 +50,7 @@ cd ai-toolkit
 git submodule update --init --recursive
 python3 -m venv venv
 source venv/bin/activate
-
+```
 -Install PyTorch (tested version with CUDA 12.6):
 ```bash
 pip install --no-cache-dir torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
