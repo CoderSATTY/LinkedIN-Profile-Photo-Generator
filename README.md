@@ -88,7 +88,7 @@ huggingface-cli login
 ```
 ### 4. Training the Model
 1.Copy an example config file from config/examples to config/ and rename it:
-``bash
+```bash
 cp config/examples/train_lora_flux_schnell_24gb.yaml config/your_config.yaml
 ```
 2.Edit the configuration file:
